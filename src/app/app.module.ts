@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { OcrComponent } from './ocr/ocr.component';
 import { WebcamModule } from 'ngx-webcam';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     WebcamModule,
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
