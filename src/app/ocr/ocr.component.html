@@ -1,0 +1,14 @@
+<div>
+  <video
+    #webcam
+    [height]="480"
+    [width]="640"
+    [style.display]="webcamImage ? 'none' : 'block'"
+  ></video>
+  <img
+    *ngIf="webcamImage"
+    [src]="webcamImage?.imageAsDataUrl"
+    alt="Captured Image"
+  />
+  <button (click)="captureImage()">Capture Photo</button>
+</div>
